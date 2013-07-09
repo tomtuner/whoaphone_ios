@@ -53,6 +53,26 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+#pragma mark - UITextField
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"Shared Device: %@", [Devices sharedDevice].token);
+
+    [Devices sharedDevice].phNum = textField.text;
+    [Devices globalDeviceRegistrationWithToken:[Devices sharedDevice] withBlock:^(NSDictionary *device, NSError *error){
+        if (!error)
+        {
+            NSLog(@"Success");
+            NSLog(@"Device: %@", device);
+        }
+    }];
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 #pragma mark -
 #pragma mark Notifications
 

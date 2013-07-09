@@ -10,7 +10,7 @@
 #import "WhoaPhone.h"
 #import "AppDelegate.h"
 
-@interface ViewController : UIViewController <UIAlertViewDelegate>
+@interface ViewController : UIViewController <UIAlertViewDelegate, UITextFieldDelegate>
 {
     WhoaPhone* _phone;
 }

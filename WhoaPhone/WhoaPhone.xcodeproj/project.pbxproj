@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F04A1D82C1D444A9655D7CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D6B2251344A2DB0D98190 /* libPods.a */; };
 		E9384FA617700A9D00DC9D97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA517700A9D00DC9D97 /* UIKit.framework */; };
 		E9384FA817700A9D00DC9D97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA717700A9D00DC9D97 /* Foundation.framework */; };
 		E9384FAA17700A9D00DC9D97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA917700A9D00DC9D97 /* CoreGraphics.framework */; };
@@ -28,10 +29,16 @@
 		E9828AC317823DAA00619FB4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9828AC017823DAA00619FB4 /* libcrypto.a */; };
 		E9828AC417823DAA00619FB4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9828AC117823DAA00619FB4 /* libssl.a */; };
 		E9828AC517823DAA00619FB4 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9828AC217823DAA00619FB4 /* libTwilioClient.a */; };
+		E9E7AF83178BC334004BD504 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7AF82178BC334004BD504 /* Security.framework */; };
+		E9E7AF85178BC36C004BD504 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7AF84178BC36C004BD504 /* MobileCoreServices.framework */; };
+		E9E7AF89178BC4AC004BD504 /* WPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7AF88178BC4AC004BD504 /* WPAPIClient.m */; };
+		E9E7AF8D178BC577004BD504 /* Devices.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7AF8C178BC577004BD504 /* Devices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E9384FA217700A9D00DC9D97 /* WhoaPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoaPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CD44525A814F9D8776B359 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		AD4D6B2251344A2DB0D98190 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9384FA217700A9D00DC9D97 /* whoaphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoaphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9384FA517700A9D00DC9D97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9384FA717700A9D00DC9D97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9384FA917700A9D00DC9D97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +75,12 @@
 		E9828AC017823DAA00619FB4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries/libcrypto.a"; sourceTree = "<group>"; };
 		E9828AC117823DAA00619FB4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries/libssl.a"; sourceTree = "<group>"; };
 		E9828AC217823DAA00619FB4 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTwilioClient.a; path = "../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries/libTwilioClient.a"; sourceTree = "<group>"; };
+		E9E7AF82178BC334004BD504 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E9E7AF84178BC36C004BD504 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E9E7AF87178BC4AC004BD504 /* WPAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAPIClient.h; sourceTree = "<group>"; };
+		E9E7AF88178BC4AC004BD504 /* WPAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAPIClient.m; sourceTree = "<group>"; };
+		E9E7AF8B178BC577004BD504 /* Devices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Devices.h; sourceTree = "<group>"; };
+		E9E7AF8C178BC577004BD504 /* Devices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Devices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E7AF85178BC36C004BD504 /* MobileCoreServices.framework in Frameworks */,
+				E9E7AF83178BC334004BD504 /* Security.framework in Frameworks */,
 				E9384FD217700B0500DC9D97 /* SystemConfiguration.framework in Frameworks */,
 				E9384FD017700B0000DC9D97 /* CFNetwork.framework in Frameworks */,
 				E9384FCE17700AFB00DC9D97 /* AVFoundation.framework in Frameworks */,
@@ -85,6 +100,7 @@
 				E9828AC317823DAA00619FB4 /* libcrypto.a in Frameworks */,
 				E9828AC417823DAA00619FB4 /* libssl.a in Frameworks */,
 				E9828AC517823DAA00619FB4 /* libTwilioClient.a in Frameworks */,
+				8F04A1D82C1D444A9655D7CC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,17 +112,15 @@
 			children = (
 				E9384FAB17700A9D00DC9D97 /* WhoaPhone */,
 				E9384FA417700A9D00DC9D97 /* Frameworks */,
-				E9828AC017823DAA00619FB4 /* libcrypto.a */,
-				E9828AC117823DAA00619FB4 /* libssl.a */,
-				E9828AC217823DAA00619FB4 /* libTwilioClient.a */,
 				E9384FA317700A9D00DC9D97 /* Products */,
+				52CD44525A814F9D8776B359 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		E9384FA317700A9D00DC9D97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9384FA217700A9D00DC9D97 /* WhoaPhone.app */,
+				E9384FA217700A9D00DC9D97 /* whoaphone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +128,11 @@
 		E9384FA417700A9D00DC9D97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9828AC017823DAA00619FB4 /* libcrypto.a */,
+				E9828AC117823DAA00619FB4 /* libssl.a */,
+				E9828AC217823DAA00619FB4 /* libTwilioClient.a */,
+				E9E7AF84178BC36C004BD504 /* MobileCoreServices.framework */,
+				E9E7AF82178BC334004BD504 /* Security.framework */,
 				E9384FD117700B0500DC9D97 /* SystemConfiguration.framework */,
 				E9384FCF17700B0000DC9D97 /* CFNetwork.framework */,
 				E9384FCD17700AFB00DC9D97 /* AVFoundation.framework */,
@@ -121,6 +140,7 @@
 				E9384FA517700A9D00DC9D97 /* UIKit.framework */,
 				E9384FA717700A9D00DC9D97 /* Foundation.framework */,
 				E9384FA917700A9D00DC9D97 /* CoreGraphics.framework */,
+				AD4D6B2251344A2DB0D98190 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +148,8 @@
 		E9384FAB17700A9D00DC9D97 /* WhoaPhone */ = {
 			isa = PBXGroup;
 			children = (
+				E9E7AF8A178BC567004BD504 /* model */,
+				E9E7AF86178BC470004BD504 /* networking */,
 				E9828ABC17822DD200619FB4 /* notifications */,
 				E9384FB417700A9D00DC9D97 /* AppDelegate.h */,
 				E9384FB517700A9D00DC9D97 /* AppDelegate.m */,
@@ -198,6 +220,24 @@
 			name = notifications;
 			sourceTree = "<group>";
 		};
+		E9E7AF86178BC470004BD504 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9E7AF87178BC4AC004BD504 /* WPAPIClient.h */,
+				E9E7AF88178BC4AC004BD504 /* WPAPIClient.m */,
+			);
+			name = networking;
+			sourceTree = "<group>";
+		};
+		E9E7AF8A178BC567004BD504 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E9E7AF8B178BC577004BD504 /* Devices.h */,
+				E9E7AF8C178BC577004BD504 /* Devices.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9384FC817700A9D00DC9D97 /* Build configuration list for PBXNativeTarget "WhoaPhone" */;
 			buildPhases = (
+				4577366275A0475AA0F0996B /* Check Pods Manifest.lock */,
 				E9384F9E17700A9D00DC9D97 /* Sources */,
 				E9384F9F17700A9D00DC9D97 /* Frameworks */,
 				E9384FA017700A9D00DC9D97 /* Resources */,
+				8758B123A1C54090B5E45148 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,7 +257,7 @@
 			);
 			name = WhoaPhone;
 			productName = WhoaPhone;
-			productReference = E9384FA217700A9D00DC9D97 /* WhoaPhone.app */;
+			productReference = E9384FA217700A9D00DC9D97 /* whoaphone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -260,6 +302,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4577366275A0475AA0F0996B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		8758B123A1C54090B5E45148 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9384F9E17700A9D00DC9D97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +343,8 @@
 				E9384FC517700A9D00DC9D97 /* ViewController.m in Sources */,
 				E9384FE417700CC900DC9D97 /* WhoaPhone.m in Sources */,
 				E9828ABF17822E0500619FB4 /* WhoaPhoneNotifications.m in Sources */,
+				E9E7AF89178BC4AC004BD504 /* WPAPIClient.m in Sources */,
+				E9E7AF8D178BC577004BD504 /* Devices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +390,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Demeo (AU7RJLF4N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Demeo (AU7RJLF4N7)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -330,6 +406,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "C85694E0-1360-4AB5-83ED-FDD32AC5201B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C85694E0-1360-4AB5-83ED-FDD32AC5201B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,6 +425,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Demeo (AU7RJLF4N7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -355,6 +434,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C85694E0-1360-4AB5-83ED-FDD32AC5201B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -363,40 +443,42 @@
 		};
 		E9384FC917700A9D00DC9D97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52CD44525A814F9D8776B359 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoaPhone/WhoaPhone-Prefix.pch";
 				INFOPLIST_FILE = "WhoaPhone/WhoaPhone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
 					"\"$(SRCROOT)/WhoaPhone/twilio/Libraries\"",
-					"\"$(SRCROOT)/../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = whoaphone;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		E9384FCA17700A9D00DC9D97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52CD44525A814F9D8776B359 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoaPhone/WhoaPhone-Prefix.pch";
 				INFOPLIST_FILE = "WhoaPhone/WhoaPhone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
 					"\"$(SRCROOT)/WhoaPhone/twilio/Libraries\"",
-					"\"$(SRCROOT)/../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = whoaphone;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

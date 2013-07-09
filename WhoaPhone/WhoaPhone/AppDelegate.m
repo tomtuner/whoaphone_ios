@@ -13,6 +13,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Let the device know we want to receive push notifications
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     ViewController *vc = (ViewController *)self.window.rootViewController;
@@ -49,6 +53,20 @@
 	
 	UIApplicationState state = [UIApplication sharedApplication].applicationState;
 	return (state==UIApplicationStateActive);
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+	NSLog(@"My token is: %@", deviceToken);
+    [Devices sharedDevice].token = [[[[deviceToken description]
+                                stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                               stringByReplacingOccurrencesOfString: @">" withString: @""]
+                                 stringByReplacingOccurrencesOfString: @" " withString: @""];
+                                }
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
