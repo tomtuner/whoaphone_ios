@@ -72,7 +72,7 @@
 	NSString *capabilityToken = nil;
 	//Make the URL Connection to your server
 
-	NSURL *url = [NSURL URLWithString:@"http://www.sweepevents.com/twilio/auth.php?clientName=thomasjdemeo"];
+	NSURL *url = [NSURL URLWithString:@"http://whoaphone.sweepevents.com/api/twilio_auth?clientName=thomasdemeoj"];
 	NSURLResponse *response = nil;
 	NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:url]
 										 returningResponse:&response error:error];
