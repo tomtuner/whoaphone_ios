@@ -327,6 +327,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="7Lb-YR-3Xk" eventType="touchUpInside" id="sBL-Tn-lpJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -452,6 +455,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KeypadViewController.h"/>
             <relationships>
                 <relationship kind="action" name="callButtonSelected:"/>
+                <relationship kind="action" name="deleteButtonPressed:"/>
                 <relationship kind="action" name="keySelected:"/>
                 <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
             </relationships>

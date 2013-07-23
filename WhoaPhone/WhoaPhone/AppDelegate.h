@@ -13,10 +13,12 @@
 @class BasicPhoneViewController;
 @class WhoaPhone;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) WhoaPhone *phone;
+@property(nonatomic, strong) UIAlertView* alertView;
+
 // Returns NO if the app isn't in the foreground in a multitasking OS environment.
 -(BOOL)isForeground;
 

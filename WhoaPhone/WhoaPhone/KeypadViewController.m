@@ -37,6 +37,14 @@
     self.numberLabel.text = [NSString stringWithFormat:@"%@%@", self.numberLabel.text, keypadButton.titleLabel.text];
 }
 
+- (IBAction)deleteButtonPressed:(id)sender
+{
+    if (self.numberLabel.text.length > 0)
+    {
+        self.numberLabel.text = [self.numberLabel.text substringToIndex:self.numberLabel.text.length - 1];
+    }
+}
+
 -(IBAction)callButtonSelected:(id)sender
 {
     AppDelegate *delegate = (AppDelegate *) [UIApplication sharedApplication].delegate;

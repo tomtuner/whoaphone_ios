@@ -33,7 +33,7 @@
 
 -(void) checkForPhoneNumber
 {
-    if (![Devices sharedDevice].phNum)
+    if (![SettingsManager sharedSettingsManager].phoneNumber)
     {
         
         [self performSelector:@selector(showNumberController) withObject:nil afterDelay:0.0];
