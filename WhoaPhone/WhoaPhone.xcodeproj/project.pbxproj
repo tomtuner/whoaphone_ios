@@ -25,6 +25,9 @@
 		E9384FD017700B0000DC9D97 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FCF17700B0000DC9D97 /* CFNetwork.framework */; };
 		E9384FD217700B0500DC9D97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FD117700B0500DC9D97 /* SystemConfiguration.framework */; };
 		E9384FE417700CC900DC9D97 /* WhoaPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = E9384FE317700CC900DC9D97 /* WhoaPhone.m */; };
+		E938814D179E0BFD002C39F9 /* RecentCallsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E938814C179E0BFD002C39F9 /* RecentCallsViewController.m */; };
+		E9388151179E2159002C39F9 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9388150179E2159002C39F9 /* SettingsManager.m */; };
+		E9388154179E25F0002C39F9 /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9388153179E25F0002C39F9 /* KeypadViewController.m */; };
 		E9828ABF17822E0500619FB4 /* WhoaPhoneNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = E9828ABE17822E0500619FB4 /* WhoaPhoneNotifications.m */; };
 		E9828AC317823DAA00619FB4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9828AC017823DAA00619FB4 /* libcrypto.a */; };
 		E9828AC417823DAA00619FB4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9828AC117823DAA00619FB4 /* libssl.a */; };
@@ -70,6 +73,12 @@
 		E9384FDE17700BCC00DC9D97 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
 		E9384FE217700CC900DC9D97 /* WhoaPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoaPhone.h; sourceTree = "<group>"; };
 		E9384FE317700CC900DC9D97 /* WhoaPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoaPhone.m; sourceTree = "<group>"; };
+		E938814B179E0BFD002C39F9 /* RecentCallsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentCallsViewController.h; sourceTree = "<group>"; };
+		E938814C179E0BFD002C39F9 /* RecentCallsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentCallsViewController.m; sourceTree = "<group>"; };
+		E938814F179E2159002C39F9 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		E9388150179E2159002C39F9 /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		E9388152179E25F0002C39F9 /* KeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
+		E9388153179E25F0002C39F9 /* KeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 		E9828ABD17822E0500619FB4 /* WhoaPhoneNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoaPhoneNotifications.h; sourceTree = "<group>"; };
 		E9828ABE17822E0500619FB4 /* WhoaPhoneNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoaPhoneNotifications.m; sourceTree = "<group>"; };
 		E9828AC017823DAA00619FB4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../Downloads/TwilioClient-1.1.2-a755dee 2/Libraries/libcrypto.a"; sourceTree = "<group>"; };
@@ -148,6 +157,7 @@
 		E9384FAB17700A9D00DC9D97 /* WhoaPhone */ = {
 			isa = PBXGroup;
 			children = (
+				E938814E179E214B002C39F9 /* settings */,
 				E9E7AF8A178BC567004BD504 /* model */,
 				E9E7AF86178BC470004BD504 /* networking */,
 				E9828ABC17822DD200619FB4 /* notifications */,
@@ -157,6 +167,10 @@
 				E9384FC017700A9D00DC9D97 /* MainStoryboard_iPad.storyboard */,
 				E9384FC317700A9D00DC9D97 /* ViewController.h */,
 				E9384FC417700A9D00DC9D97 /* ViewController.m */,
+				E938814B179E0BFD002C39F9 /* RecentCallsViewController.h */,
+				E938814C179E0BFD002C39F9 /* RecentCallsViewController.m */,
+				E9388152179E25F0002C39F9 /* KeypadViewController.h */,
+				E9388153179E25F0002C39F9 /* KeypadViewController.m */,
 				E9384FE217700CC900DC9D97 /* WhoaPhone.h */,
 				E9384FE317700CC900DC9D97 /* WhoaPhone.m */,
 				E9384FAC17700A9D00DC9D97 /* Supporting Files */,
@@ -209,6 +223,15 @@
 				E9384FDE17700BCC00DC9D97 /* libTwilioClient.a */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E938814E179E214B002C39F9 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				E938814F179E2159002C39F9 /* SettingsManager.h */,
+				E9388150179E2159002C39F9 /* SettingsManager.m */,
+			);
+			name = settings;
 			sourceTree = "<group>";
 		};
 		E9828ABC17822DD200619FB4 /* notifications */ = {
@@ -345,6 +368,9 @@
 				E9828ABF17822E0500619FB4 /* WhoaPhoneNotifications.m in Sources */,
 				E9E7AF89178BC4AC004BD504 /* WPAPIClient.m in Sources */,
 				E9E7AF8D178BC577004BD504 /* Devices.m in Sources */,
+				E938814D179E0BFD002C39F9 /* RecentCallsViewController.m in Sources */,
+				E9388151179E2159002C39F9 /* SettingsManager.m in Sources */,
+				E9388154179E25F0002C39F9 /* KeypadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoaPhone/WhoaPhone-Prefix.pch";
 				INFOPLIST_FILE = "WhoaPhone/WhoaPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -469,6 +496,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhoaPhone/WhoaPhone-Prefix.pch";
 				INFOPLIST_FILE = "WhoaPhone/WhoaPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",

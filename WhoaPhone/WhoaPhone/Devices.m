@@ -37,12 +37,12 @@ static BOOL initialized = NO;
     return self;
 }
 
-+ (void)globalDeviceRegistrationWithToken:(Devices *) device withBlock:(void (^)(NSDictionary *device, NSError *error))block
++ (void)globalDeviceRegistrationWithDevice:(Devices *) device withBlock:(void (^)(NSDictionary *device, NSError *error))block
 {
     
     NSDictionary *paramDict = [NSDictionary dictionaryWithObjectsAndKeys:
                                device.token, @"token",
-                               device.phNum, @"ph_num", nil];
+                               [SettingsManager sharedSettingsManager].phoneNumber, @"ph_num", nil];
     NSMutableDictionary *deviceString = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                   paramDict, @"device", nil];
     

@@ -19,11 +19,8 @@
     
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    ViewController *vc = (ViewController *)self.window.rootViewController;
     self.phone = [[WhoaPhone alloc] init];
-    vc.phone = self.phone;
-    [self.phone login];
-    
+
     return YES;
 }
 

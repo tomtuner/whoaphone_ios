@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "43"
          endingLineNumber = "43"
-         landmarkName = "+globalDeviceRegistrationWithToken:withBlock:"
+         landmarkName = "+globalDeviceRegistrationWithDevice:withBlock:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,12 +21,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "WhoaPhone/WhoaPhone/AppDelegate.m"
-         timestampString = "395040110.304567"
+         timestampString = "396245655.342325"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "61"
-         endingLineNumber = "61"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
          landmarkName = "-application:didRegisterForRemoteNotificationsWithDeviceToken:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "WhoaPhone/WhoaPhone/KeypadViewController.m"
+         timestampString = "396241373.323812"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
+         landmarkName = "-callButtonSelected:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

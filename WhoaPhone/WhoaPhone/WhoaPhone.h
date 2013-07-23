@@ -12,6 +12,7 @@
 
 #import "TwilioClient.h"
 #import "WhoaPhoneNotifications.h"
+#import "Devices.h"
 
 @interface WhoaPhone : NSObject <TCDeviceDelegate, TCConnectionDelegate, UIAlertViewDelegate>
 
@@ -22,7 +23,7 @@
 -(void)login;
 
 //TCConnection Methods
--(void)connect;
+-(void)connect:(NSString *) phNumber;
 -(void)disconnect;
 -(void)acceptConnection;
 -(void)ignoreIncomingConnection;

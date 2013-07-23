@@ -72,7 +72,7 @@
 	NSString *capabilityToken = nil;
 	//Make the URL Connection to your server
 
-	NSURL *url = [NSURL URLWithString:@"http://whoaphone.sweepevents.com/api/twilio_auth?clientName=thomasdemeoj"];
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://whoaphone.sweepevents.com/api/twilio_auth?clientName=%@", [SettingsManager sharedSettingsManager].phoneNumber]];
 	NSURLResponse *response = nil;
 	NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:url]
 										 returningResponse:&response error:error];
@@ -112,7 +112,7 @@
 #pragma mark -
 #pragma mark TCConnection Implementation
 
--(void)connect
+-(void)connect:(NSString *) phNumber
 {
 	// First check to see if the token we have is valid, and if not, refresh it.
 	// Your own client may ask the user to re-authenticate to obtain a new token depending on
@@ -130,8 +130,14 @@
 		//Disconnect if we've already got a connection in progress
 		if(_connection)
 			[self disconnect];
+        
+        NSDictionary *params = nil;
+        if (phNumber.length > 0)
+        {
+            params = [NSDictionary dictionaryWithObject:phNumber forKey:@"PhoneNumber"];
+        }
 		
-		_connection = [_device connect:nil delegate:self];
+		_connection = [_device connect:params delegate:self];
 		
 		if ( !_connection ) // if a connection is established, connectionDidStartConnecting: gets invoked next
 		{

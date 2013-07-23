@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WPAPIClient.h"
+#import "SettingsManager.h"
 
 @interface Devices : NSObject {
     Devices *device;
@@ -18,6 +19,6 @@
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) NSString *phNum;
 
-+ (void)globalDeviceRegistrationWithToken:(Devices *) device withBlock:(void (^)(NSDictionary *device, NSError *error))block;
++ (void)globalDeviceRegistrationWithDevice:(Devices *) device withBlock:(void (^)(NSDictionary *device, NSError *error))block;
 
 @end

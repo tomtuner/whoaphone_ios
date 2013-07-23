@@ -59,12 +59,17 @@
 {
     NSLog(@"Shared Device: %@", [Devices sharedDevice].token);
 
-    [Devices sharedDevice].phNum = textField.text;
-    [Devices globalDeviceRegistrationWithToken:[Devices sharedDevice] withBlock:^(NSDictionary *device, NSError *error){
+//    [Devices sharedDevice].phNum = textField.text;
+    [SettingsManager sharedSettingsManager].phoneNumber = textField.text;
+    [Devices globalDeviceRegistrationWithDevice:[Devices sharedDevice] withBlock:^(NSDictionary *device, NSError *error){
         if (!error)
         {
             NSLog(@"Success");
             NSLog(@"Device: %@", device);
+            AppDelegate *delegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
+            self.phone = delegate.phone;
+            [self.phone login];
+            [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];
     
