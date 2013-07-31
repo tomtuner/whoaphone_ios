@@ -50,6 +50,19 @@
     AppDelegate *delegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     WhoaPhone *phone = delegate.phone;
     [phone connect:self.numberLabel.text];
+    [self showInCallController];
+}
+
+- (void) showInCallController
+{
+    UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
+    InCallViewController *inCallController = [st instantiateViewControllerWithIdentifier:@"inCallViewController"];
+    inCallController.outboundNumber = self.numberLabel.text;
+    inCallController.initialStatus = @"Calling...";
+    //    logInController.departmentKeyItem = self.departmentKeyItem;
+    //    logInController.modalPresentationStyle = UIModalPresentationFormSheet;
+    inCallController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:inCallController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

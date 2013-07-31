@@ -179,6 +179,7 @@
 		if(!self.phone.connection)
 		{
 			[self.phone acceptConnection];
+            [self showInCallController];
 		}
 		else
 		{
@@ -187,6 +188,7 @@
 			
 			//Give the client time to reset itself, then accept connection
 			[self.phone performSelector:@selector(acceptConnection) withObject:nil afterDelay:0.2];
+            [self showInCallController];
 		}
 	}
 	else
@@ -194,6 +196,15 @@
 		// We don't release until after the delegate callback for connectionDidConnect:
 		[self.phone ignoreIncomingConnection];
 	}
+}
+
+- (void) showInCallController
+{
+    UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
+    InCallViewController *inCallController = [st instantiateViewControllerWithIdentifier:@"inCallViewController"];
+//    logInController.departmentKeyItem = self.departmentKeyItem;
+//    logInController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self.window.rootViewController presentViewController:inCallController animated:NO completion:nil];
 }
 
 -(void)cancelAlert

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 #import "Devices.h"
+#import "InCallViewController.h"
 
 @class BasicPhoneViewController;
 @class WhoaPhone;

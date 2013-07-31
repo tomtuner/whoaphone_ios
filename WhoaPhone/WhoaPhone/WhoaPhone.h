@@ -22,6 +22,8 @@
 
 -(void)login;
 
+-(void)setSpeakerEnabled:(BOOL)enabled;
+
 //TCConnection Methods
 -(void)connect:(NSString *) phNumber;
 -(void)disconnect;

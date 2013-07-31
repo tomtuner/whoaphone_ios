@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F04A1D82C1D444A9655D7CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D6B2251344A2DB0D98190 /* libPods.a */; };
+		E91DA4E517A88E0E00F92D2B /* InCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91DA4E417A88E0E00F92D2B /* InCallViewController.m */; };
 		E9384FA617700A9D00DC9D97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA517700A9D00DC9D97 /* UIKit.framework */; };
 		E9384FA817700A9D00DC9D97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA717700A9D00DC9D97 /* Foundation.framework */; };
 		E9384FAA17700A9D00DC9D97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9384FA917700A9D00DC9D97 /* CoreGraphics.framework */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		52CD44525A814F9D8776B359 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		AD4D6B2251344A2DB0D98190 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91DA4E317A88E0E00F92D2B /* InCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InCallViewController.h; sourceTree = "<group>"; };
+		E91DA4E417A88E0E00F92D2B /* InCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InCallViewController.m; sourceTree = "<group>"; };
 		E9384FA217700A9D00DC9D97 /* whoaphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoaphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9384FA517700A9D00DC9D97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9384FA717700A9D00DC9D97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +170,8 @@
 				E9384FC017700A9D00DC9D97 /* MainStoryboard_iPad.storyboard */,
 				E9384FC317700A9D00DC9D97 /* ViewController.h */,
 				E9384FC417700A9D00DC9D97 /* ViewController.m */,
+				E91DA4E317A88E0E00F92D2B /* InCallViewController.h */,
+				E91DA4E417A88E0E00F92D2B /* InCallViewController.m */,
 				E938814B179E0BFD002C39F9 /* RecentCallsViewController.h */,
 				E938814C179E0BFD002C39F9 /* RecentCallsViewController.m */,
 				E9388152179E25F0002C39F9 /* KeypadViewController.h */,
@@ -371,6 +376,7 @@
 				E938814D179E0BFD002C39F9 /* RecentCallsViewController.m in Sources */,
 				E9388151179E2159002C39F9 /* SettingsManager.m in Sources */,
 				E9388154179E25F0002C39F9 /* KeypadViewController.m in Sources */,
+				E91DA4E517A88E0E00F92D2B /* InCallViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
